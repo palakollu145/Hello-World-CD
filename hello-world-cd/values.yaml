@@ -1,3 +1,3 @@
 replicas: 2
-image: lakshitsainiceligo/qa:1.0.0.6.0
+image: lakshitsainiceligo/qa:1.0.0.5.0
 
