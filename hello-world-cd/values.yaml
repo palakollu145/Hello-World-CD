@@ -1,3 +1,3 @@
-replicas: 11
+replicas: 8
 image: lakshitsainiceligo/qa:1.0.0.5.0
 
