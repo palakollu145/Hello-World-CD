@@ -1,4 +1,4 @@
-replicas: 8
+replicas: 3
 #image: lakshitsainiceligo/dev:Dev
 image: lakshitsainiceligo/qa:Qa
 
