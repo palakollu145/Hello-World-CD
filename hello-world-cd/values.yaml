@@ -1,4 +1,4 @@
 replicas: 8
-image: lakshitsainiceligo/dev:1.0.0.112.0
-#image: lakshitsainiceligo/qa:1.0.0.4.0
+#image: lakshitsainiceligo/dev:1.0.0.112.0
+image: lakshitsainiceligo/qa:1.0.0.5.0
 
