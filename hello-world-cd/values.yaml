@@ -1,2 +1,2 @@
 replicas: 5
-image: lakshitsainiceligo/qa:HelloWorld_1.0.0.12.0
+image: lakshitsainiceligo/qa:HelloWorld_1.0.0.13.0
