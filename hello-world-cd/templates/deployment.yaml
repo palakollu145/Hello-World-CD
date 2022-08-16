@@ -20,5 +20,5 @@ spec:
         image: {{ .Values.image }}
         ports:
           - containerPort: 5000
-        imagePullSecrets: 
-        - name: regcred
+      imagePullSecrets: 
+      - name: regcred
