@@ -1,2 +1,2 @@
-image: lakshitsainiceligo/qa:1.0.0.98.0
+image: lakshitsainiceligo/qa:1.0.0.97.0
 replicas: 8
