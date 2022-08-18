@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeweb-service
+  name: myapp-service
 spec:
   type: NodePort
   selector:
