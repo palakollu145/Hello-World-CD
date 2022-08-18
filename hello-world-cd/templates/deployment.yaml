@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeweb-deployment
+  name: myapp-deployment
   labels:
-    app: nodeweb
+    app: myapp
 spec:
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
-      app: nodeweb
+      app: myapp
   template:
     metadata:
-      name: nodeweb
+      name: myapp
       labels:
-        app: nodeweb
+        app: myapp
     spec:
       containers:
       - name: nodeweb-container
