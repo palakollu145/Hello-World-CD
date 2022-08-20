@@ -21,4 +21,4 @@ spec:
         ports:
           - containerPort: 5000
       imagePullSecrets: 
-      - name: hello-world-cd
+      - name: hello-world-rest
