@@ -1,2 +1,2 @@
-image: 341118756977.dkr.ecr.ap-south-1.amazonaws.com/hello-world-rest
+image: 341118756977.dkr.ecr.ap-south-1.amazonaws.com/hello-world-rest:latest
 replicas: 2
