@@ -1,2 +1,2 @@
 image: lakshitsainiceligo/qa:HelloWorld_1.0.0.107.0
-replicas: 1
+replicas: 5
