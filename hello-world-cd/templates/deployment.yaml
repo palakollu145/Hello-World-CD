@@ -22,4 +22,4 @@ spec:
         ports:
           - containerPort: 5000
       imagePullSecrets: 
-      - name: hello-world-rest-key
+      - name: hello-world-rest-secret
