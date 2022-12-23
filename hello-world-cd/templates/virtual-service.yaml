@@ -6,7 +6,7 @@ spec:
   gateways:
   - myapp-gateway
   hosts:
-  - myapp-service.deploy.svc.cluster.local
+  - myapp-services.deploy.svc.cluster.local
  # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
