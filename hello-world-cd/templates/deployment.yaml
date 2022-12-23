@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nodeweb-container
-        image: palakollu145/nodeweb:red
+        image: palakollu145/nodeweb:blue
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
