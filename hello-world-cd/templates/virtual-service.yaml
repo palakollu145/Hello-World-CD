@@ -4,7 +4,7 @@ metadata:
   name: myapp-vs
 spec:
   gateways:
-  - istio-ingressgateway.istio-system.svc.cluster.local
+  - myapp-gateway
   hosts:
   - myapp-service.deploy.svc.cluster.local
  # Copy the value in the gateway hosts - usually a Domain Name
