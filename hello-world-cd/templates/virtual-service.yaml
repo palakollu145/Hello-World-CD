@@ -14,9 +14,11 @@ spec:
     - destination:
         host: myapp-service
         subset: free
+      weight: 50
     - destination:
         host: myapp-service
         subset: freecanery
+      weight: 50
   - match:
     - uri:
         prefix: "/"
@@ -24,6 +26,8 @@ spec:
     - destination:
         host: myapp-service
         subset: paid
+      weight: 50
     - destination:
         host: myapp-service
         subset: paidcanery
+      weight: 50
