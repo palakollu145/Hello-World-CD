@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ns
+  name: ns-free
   labels:
     app: myapp
 spec:
@@ -14,11 +14,11 @@ spec:
       name: myapp
       labels:
         app: myapp
-        version: paid
+        version: freecanery
     spec:
       containers:
       - name: nodeweb-container
-        image: palakollu145/nodeweb:paid
+        image: palakollu145/nodeweb:freecanery
         imagePullPolicy: Always
         ports:
           - containerPort: 8080

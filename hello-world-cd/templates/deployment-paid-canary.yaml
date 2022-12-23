@@ -14,11 +14,11 @@ spec:
       name: myapp
       labels:
         app: myapp
-        version: paid
+        version: paidcanery
     spec:
       containers:
       - name: nodeweb-container
-        image: palakollu145/nodeweb:paid
+        image: palakollu145/nodeweb:paidcanery
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
