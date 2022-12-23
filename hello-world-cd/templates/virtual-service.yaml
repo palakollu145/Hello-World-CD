@@ -3,8 +3,11 @@ kind: VirtualService
 metadata:
   name: myapp-vs
 spec:
-  hosts:      # which incoming host are we applying the proxy rules to???
-    - "*" # Copy the value in the gateway hosts - usually a Domain Name
+  gateways:
+  - istio-ingressgateway.istio-system.svc.cluster.local
+  hosts:
+  - myapp-service.deploy.svc.cluster.local
+ # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
     - headers:
