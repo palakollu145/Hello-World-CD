@@ -4,7 +4,7 @@ metadata:
   name: myapp-vs
 spec:
   hosts:      # which incoming host are we applying the proxy rules to???
-    - myapp-service # Copy the value in the gateway hosts - usually a Domain Name
+    - "*" # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
     - headers:
