@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: myapp-ds-rule
+spec:
+  host: myapp-service
+  subsets:
+    - labels:
+        version: free
+      name: free
+    - labels:
+        version: freecanery
+      name: freecanery
+    - labels:
+        version: paid
+      name: paid
+    - labels:
+        version: paidcanery
+      name: paidcanery

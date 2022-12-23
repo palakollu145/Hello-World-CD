@@ -1,0 +1,29 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: myapp-vs
+spec:
+  hosts:      # which incoming host are we applying the proxy rules to???
+    - "*" # Copy the value in the gateway hosts - usually a Domain Name
+  http:
+  - match:
+    - headers:
+        subscriptionType:
+          exact: free
+    route: # THEN
+    - destination:
+        host: myapp-service
+        subset: free
+    - destination:
+        host: myapp-service
+        subset: freecanery
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: myapp-service
+        subset: paid
+    - destination:
+        host: myapp-service
+        subset: paidcanery
