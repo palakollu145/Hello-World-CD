@@ -6,7 +6,7 @@ spec:
   gateways:
   - myapp-gateway
   hosts:
-  - myapp-services.deploy.svc.cluster.local
+  - myapp-services.celigo.io
  # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
