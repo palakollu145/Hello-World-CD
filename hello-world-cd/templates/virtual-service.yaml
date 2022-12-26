@@ -10,7 +10,6 @@ spec:
  # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
-    name: free
     - headers:
         subscriptionType:
           exact: free
@@ -24,7 +23,6 @@ spec:
         subset: freecanery
       weight: 50
   - match:
-    name: paid
     - uri:
         prefix: "/"
     route:
