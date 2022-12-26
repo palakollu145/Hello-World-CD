@@ -6,7 +6,7 @@ spec:
   gateways:
   - myapp-gateway
   hosts:
-  - myapp-service.apdp.svc.cluster.local
+  - 127.0.0.1
  # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
