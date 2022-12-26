@@ -11,7 +11,7 @@ spec:
       app: myapp
   template:
     metadata:
-      app: myapp
+      name: myapp
       labels:
         app: myapp
         version: freecanery
