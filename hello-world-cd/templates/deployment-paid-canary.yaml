@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: ns-paid-canery
   labels:
-    app: myapp
+    name: myapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      name: myapp
   template:
     metadata:
       name: myapp
       labels:
-        app: myapp
+        name: myapp
         version: paidcanery
     spec:
       containers:
