@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: ns-paid
   labels:
-    name: myapp
+    app: myapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: myapp
+      app: myapp
   template:
     metadata:
-      name: myapp
+      app: myapp
       labels:
-        name: myapp
+        app: myapp
         version: paid
     spec:
       containers:

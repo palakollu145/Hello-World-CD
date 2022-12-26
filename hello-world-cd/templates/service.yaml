@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    name: myapp
+    app: myapp
   ports:
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
     - port: 5000
