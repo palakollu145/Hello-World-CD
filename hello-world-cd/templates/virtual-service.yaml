@@ -6,7 +6,7 @@ spec:
   gateways:
   - myapp-gateway
   hosts:
-  - 127.0.0.1
+  - kubernetes.docker.internal
  # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
