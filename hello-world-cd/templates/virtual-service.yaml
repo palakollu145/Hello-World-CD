@@ -6,7 +6,7 @@ spec:
   gateways:
   - myapp-gateway
   hosts:
-  - myapp-services.celigo.io
+  - myapp-service.deploy.svc.cluster.local
  # Copy the value in the gateway hosts - usually a Domain Name
   http:
   - match:
@@ -15,11 +15,11 @@ spec:
           exact: free
     route: # THEN
     - destination:
-        host: myapp-service
+        host: myapp-service.deploy.svc.cluster.local
         subset: free
       weight: 50
     - destination:
-        host: myapp-service
+        host: myapp-service.deploy.svc.cluster.local
         subset: freecanery
       weight: 50
   - match:
@@ -27,10 +27,10 @@ spec:
         prefix: "/"
     route:
     - destination:
-        host: myapp-service
+        host: myapp-service.deploy.svc.cluster.local
         subset: paid
       weight: 50
     - destination:
-        host: myapp-service
+        host: myapp-service.deploy.svc.cluster.local
         subset: paidcanery
       weight: 50
