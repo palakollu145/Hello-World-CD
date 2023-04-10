@@ -4,7 +4,7 @@ metadata:
   name: myapp-gateway
 spec:
   selector:
-    app: istio-ingressgateway # use istio default controller
+    app: istio-ingress # use istio default controller
   servers:
   - port:
       number: 80
