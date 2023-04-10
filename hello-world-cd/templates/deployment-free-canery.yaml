@@ -1,26 +1,26 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ns-free-canery
-  labels:
-    app: myapp
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: myapp
-  template:
-    metadata:
-      name: myapp
-      labels:
-        app: myapp
-        version: freecanery
-    spec:
-      containers:
-      - name: nodeweb-container
-        image: palakollu145/nodeweb:freecanery
-        imagePullPolicy: Always
-        ports:
-          - containerPort: 8080
-      imagePullSecrets: 
-      - name: hello-world-rest-secret
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ns-free-canery
+#   labels:
+#     app: myapp
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: myapp
+#   template:
+#     metadata:
+#       name: myapp
+#       labels:
+#         app: myapp
+#         version: freecanery
+#     spec:
+#       containers:
+#       - name: nodeweb-container
+#         image: palakollu145/nodeweb:freecanery
+#         imagePullPolicy: Always
+#         ports:
+#           - containerPort: 8080
+#       imagePullSecrets: 
+#       - name: hello-world-rest-secret
