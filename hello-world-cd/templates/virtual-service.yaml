@@ -17,11 +17,11 @@ spec:
     - destination:
         host: myapp-service.apdp.svc.cluster.local
         subset: free
-      weight: 50
-    - destination:
-        host: myapp-service.apdp.svc.cluster.local
-        subset: freecanery
-      weight: 50
+#       weight: 50
+#     - destination:
+#         host: myapp-service.apdp.svc.cluster.local
+#         subset: freecanery
+#       weight: 50
   - match:
     - uri:
         prefix: "/"
@@ -29,8 +29,8 @@ spec:
     - destination:
         host: myapp-service.apdp.svc.cluster.local
         subset: paid
-      weight: 50
-    - destination:
-        host: myapp-service.apdp.svc.cluster.local
-        subset: paidcanery
-      weight: 50
+#       weight: 50
+#     - destination:
+#         host: myapp-service.apdp.svc.cluster.local
+#         subset: paidcanery
+#       weight: 50
