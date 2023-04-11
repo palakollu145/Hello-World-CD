@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nodeweb-container
-        image: palakollu145/nodeweb:free
+        image: palakollu145/nodeweb:freecanery
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
