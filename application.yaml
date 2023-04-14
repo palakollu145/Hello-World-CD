@@ -12,7 +12,7 @@ spec:
     path: hello-world-cd
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: adpd
 
   syncPolicy:
     syncOptions:
